@@ -1,0 +1,19 @@
+pragma solidity ^0.5.0;
+
+contract Example1{
+    
+    uint[] arr1;
+    
+    function getarraylength() public view returns(uint){
+        
+        return arr1.length;
+    }
+    
+    function setarray(uint element) public{
+        arr1.push(element);
+    }
+    
+    function getarray(uint index) public view returns(uint){
+      return arr1[index];
+    }
+}
