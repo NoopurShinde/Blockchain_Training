@@ -1,0 +1,111 @@
+{
+  "contractName": "testContract_",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/noopur/Blockchain_Training/ERC721/contracts/testContract_.sol\":\"testContract_\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/noopur/Blockchain_Training/ERC721/contracts/testContract_.sol\":{\"keccak256\":\"0xd2ccf33b402f2c28d4683192c4766dfc31f54fc8be1a434d242c3bc2d5cc6868\",\"urls\":[\"bzzr://2d9d20c8f3c2469038a45f2f47f1ab957d2be1827599cd8173cbbac1a17fb0db\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820d99e1b7c96a8f34325c641ab2c53b1d8fae5ec5e11f45670d350caa3ff5cca280029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820d99e1b7c96a8f34325c641ab2c53b1d8fae5ec5e11f45670d350caa3ff5cca280029",
+  "sourceMap": "27:34:20:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:34:20;;;;;;;",
+  "deployedSourceMap": "27:34:20:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\n\n contract testContract_ {\n     \n  }",
+  "sourcePath": "/home/noopur/Blockchain_Training/ERC721/contracts/testContract_.sol",
+  "ast": {
+    "absolutePath": "/home/noopur/Blockchain_Training/ERC721/contracts/testContract_.sol",
+    "exportedSymbols": {
+      "testContract_": [
+        1781
+      ]
+    },
+    "id": 1782,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1780,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:20"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1781,
+        "linearizedBaseContracts": [
+          1781
+        ],
+        "name": "testContract_",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1782,
+        "src": "27:34:20"
+      }
+    ],
+    "src": "0:61:20"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/noopur/Blockchain_Training/ERC721/contracts/testContract_.sol",
+    "exportedSymbols": {
+      "testContract_": [
+        1781
+      ]
+    },
+    "id": 1782,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1780,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:20"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1781,
+        "linearizedBaseContracts": [
+          1781
+        ],
+        "name": "testContract_",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1782,
+        "src": "27:34:20"
+      }
+    ],
+    "src": "0:61:20"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x016f36D215788EE28cbA5eA09A656F2902D421a4",
+      "transactionHash": "0x8bf694bd36740a993af7526936a4799fae5f6cbec0fae60af6227d1b0abccefa"
+    }
+  },
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-09-19T16:17:45.992Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,7 +1,3 @@
-import "truffle/Assert.sol";
-
-const truffleAssert = require('truffle-assertions');
-
 var TestArray = artifacts.require("./ArrayExample.sol");
 
 

@@ -1,0 +1,213 @@
+{
+  "contractName": "testContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"\",\"type\":\"address\"},{\"name\":\"\",\"type\":\"address\"},{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes4\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/noopur/Blockchain_Training/ERC721/contracts/testContract.sol\":\"testContract\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/noopur/Blockchain_Training/ERC721/contracts/debug/ERC721Holder.sol\":{\"keccak256\":\"0xb2b0c5d6c6d25af576c67ab17c17b60dc98510a9869689b0d077fa69922c3c67\",\"urls\":[\"bzzr://ed6c4b26be5b0348408f029af7fcc77be438535fa0cd7489c97574fda3ab293f\"]},\"/home/noopur/Blockchain_Training/ERC721/contracts/debug/IERC721Receiver.sol\":{\"keccak256\":\"0xadbfb7028fb0f851dc848a48b9e54e7c89ffd2c2edc12fa4ba9bb383dfaa83d9\",\"urls\":[\"bzzr://2466b6491600969dd9ffdeb0b705e7cecc38418aa215cec64b2481273bba9076\"]},\"/home/noopur/Blockchain_Training/ERC721/contracts/testContract.sol\":{\"keccak256\":\"0x81be9ce219c72ea28e5636c7605d2c1787182b1305aafb0e6d0da658827e9e27\",\"urls\":[\"bzzr://2f9050d64974d01c04390bf21bd6c17fc7ee45c957c12ec1011b91cd7431e125\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610200806100206000396000f3fe60806040526004361061003b576000357c010000000000000000000000000000000000000000000000000000000090048063150b7a0214610040575b600080fd5b34801561004c57600080fd5b506101506004803603608081101561006357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001906401000000008111156100ca57600080fd5b8201836020820111156100dc57600080fd5b803590602001918460018302840111640100000000831117156100fe57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101a4565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b600063150b7a027c010000000000000000000000000000000000000000000000000000000002905094935050505056fea165627a7a723058205629d40a159992d57ebcc006cefe73fc2277318049ca4aaa68b6cacfa20e49710029",
+  "deployedBytecode": "0x60806040526004361061003b576000357c010000000000000000000000000000000000000000000000000000000090048063150b7a0214610040575b600080fd5b34801561004c57600080fd5b506101506004803603608081101561006357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190803590602001906401000000008111156100ca57600080fd5b8201836020820111156100dc57600080fd5b803590602001918460018302840111640100000000831117156100fe57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101a4565b60405180827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b600063150b7a027c010000000000000000000000000000000000000000000000000000000002905094935050505056fea165627a7a723058205629d40a159992d57ebcc006cefe73fc2277318049ca4aaa68b6cacfa20e49710029",
+  "sourceMap": "61:43:19:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:43:19;;;;;;;",
+  "deployedSourceMap": "61:43:19:-;;;;;;;;;;;;;;;;;;;;;;105:145:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;105:145:9;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;105:145:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;105:145:9;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;105:145:9;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;105:145:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;105:145:9;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;188:6;213:30;;;206:37;;105:145;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"./debug/ERC721Holder.sol\";\n\ncontract testContract is ERC721Holder{\n\n\n\n}\n\n// contract testContract{\n// }",
+  "sourcePath": "/home/noopur/Blockchain_Training/ERC721/contracts/testContract.sol",
+  "ast": {
+    "absolutePath": "/home/noopur/Blockchain_Training/ERC721/contracts/testContract.sol",
+    "exportedSymbols": {
+      "testContract": [
+        1778
+      ]
+    },
+    "id": 1779,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1774,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:19"
+      },
+      {
+        "absolutePath": "/home/noopur/Blockchain_Training/ERC721/contracts/debug/ERC721Holder.sol",
+        "file": "./debug/ERC721Holder.sol",
+        "id": 1775,
+        "nodeType": "ImportDirective",
+        "scope": 1779,
+        "sourceUnit": 1251,
+        "src": "25:34:19",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1776,
+              "name": "ERC721Holder",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1250,
+              "src": "86:12:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721Holder_$1250",
+                "typeString": "contract ERC721Holder"
+              }
+            },
+            "id": 1777,
+            "nodeType": "InheritanceSpecifier",
+            "src": "86:12:19"
+          }
+        ],
+        "contractDependencies": [
+          1250,
+          1570
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1778,
+        "linearizedBaseContracts": [
+          1778,
+          1250,
+          1570
+        ],
+        "name": "testContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1779,
+        "src": "61:43:19"
+      }
+    ],
+    "src": "0:136:19"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/noopur/Blockchain_Training/ERC721/contracts/testContract.sol",
+    "exportedSymbols": {
+      "testContract": [
+        1778
+      ]
+    },
+    "id": 1779,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1774,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:19"
+      },
+      {
+        "absolutePath": "/home/noopur/Blockchain_Training/ERC721/contracts/debug/ERC721Holder.sol",
+        "file": "./debug/ERC721Holder.sol",
+        "id": 1775,
+        "nodeType": "ImportDirective",
+        "scope": 1779,
+        "sourceUnit": 1251,
+        "src": "25:34:19",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1776,
+              "name": "ERC721Holder",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1250,
+              "src": "86:12:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721Holder_$1250",
+                "typeString": "contract ERC721Holder"
+              }
+            },
+            "id": 1777,
+            "nodeType": "InheritanceSpecifier",
+            "src": "86:12:19"
+          }
+        ],
+        "contractDependencies": [
+          1250,
+          1570
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1778,
+        "linearizedBaseContracts": [
+          1778,
+          1250,
+          1570
+        ],
+        "name": "testContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1779,
+        "src": "61:43:19"
+      }
+    ],
+    "src": "0:136:19"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x79031cED32B99e5616551a442D5178CA8Cb6EdE8",
+      "transactionHash": "0x1b3c5f7682104545e03441a0dc89e7f41cd092f0f9e63d39bdf7dc457ed46cbe"
+    }
+  },
+  "schemaVersion": "3.0.13",
+  "updatedAt": "2019-09-20T08:59:40.218Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

@@ -1,5 +1,5 @@
 TN:
-SF:/home/noopur/Blockchain/11Sept/My_token/contracts/ArrayExample.sol
+SF:/home/noopur/Blockchain_Training/My_token_V1/contracts/ArrayExample.sol
 FN:7,getarraylength
 FN:12,setarray
 FN:16,removelastelement
@@ -24,7 +24,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:/home/noopur/Blockchain/11Sept/My_token/contracts/Bank.sol
+SF:/home/noopur/Blockchain_Training/My_token_V1/contracts/Bank.sol
 FN:14,constructor
 FN:24,deposit
 FN:35,displayBalance
@@ -59,7 +59,7 @@ BRF:6
 BRH:3
 end_of_record
 TN:
-SF:/home/noopur/Blockchain/11Sept/My_token/contracts/FloodReliefDonation.sol
+SF:/home/noopur/Blockchain_Training/My_token_V1/contracts/FloodReliefDonation.sol
 FN:23,constructor
 FN:35,contribute
 FN:63,getContributorinfo
@@ -100,7 +100,7 @@ BRF:4
 BRH:2
 end_of_record
 TN:
-SF:/home/noopur/Blockchain/11Sept/My_token/contracts/HelloWorld.sol
+SF:/home/noopur/Blockchain_Training/My_token_V1/contracts/HelloWorld.sol
 FN:6,constructor
 FN:10,getstring
 FN:14,setstring
