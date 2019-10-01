@@ -51,31 +51,32 @@ contract MultiSigWallet {
 
     modifier transactionExists(uint transactionId) {
         if (transactions[transactionId].destination == address(0))
-            revert();
+            revert("Transaction does not exists");
         _;
     }
 
     modifier confirmed(uint transactionId, address owner) {
         if (!confirmations[transactionId][owner])
-            revert();
+            revert("Transaction not confirmed by msg.sender");
         _;
     }
 
     modifier notConfirmed(uint transactionId, address owner) {
         if (confirmations[transactionId][owner])
-            revert();
+            revert("Transaction already confirmed by msg.sender");
         _;
     }
 
     modifier notExecuted(uint transactionId) {
         if (transactions[transactionId].executed)
-            revert();
+            revert("Transaction has been executed");
         _;
     }
 
     modifier notNull(address _address) {
         if (_address == address(0))
             revert("Null address received");
+       
         _;
     }
 
@@ -84,9 +85,12 @@ contract MultiSigWallet {
             || _required > ownerCount
             || _required == 0
             || ownerCount == 0)
-            revert("Requirement should be changed");
+                revert("Requirement should be changed");
+            
+            
         _;
     }
+    
 
     /// @dev Fallback function allows to deposit ether.
     function() external
@@ -102,23 +106,24 @@ contract MultiSigWallet {
     /// @dev Contract constructor sets initial owners and required number of confirmations.
     /// @param _owners List of initial owners.
     /// @param _required Number of required confirmations.
-    constructor(address[] memory _owners, uint _required) 
+    constructor(address[] memory _owners, uint _required)
             public
         validRequirement(_owners.length, _required)
     {
-        for (uint i = 0; i<owners.length; i++) {
+            for (uint i = 0; i<_owners.length; i++) {
             if (isOwner[_owners[i]] || _owners[i] == address(0))
-                revert("");
+                revert("Owner address should not be zero address");
             isOwner[_owners[i]] = true;
-        }
+         }
         owners = _owners;
         required = _required;
     }
 
+   
+
     function msgsender() public view returns(address){
         return msg.sender;
     }
-    
     /// @dev Allows to add a new owner. Transaction has to be sent by wallet.
     /// @param owner Address of new owner.
     function addOwner(address owner)
@@ -139,7 +144,7 @@ contract MultiSigWallet {
     /// @param owner Address of owner.
     function removeOwner(address owner)
         public
-        //onlyWallet
+        onlyWallet
         ownerExists(owner)
     {
         isOwner[owner] = false;
@@ -159,7 +164,7 @@ contract MultiSigWallet {
     /// @param owner Address of new owner.
     function replaceOwner(address owner, address newOwner)
         public
-      //  onlyWallet
+       onlyWallet
         ownerExists(owner)
         ownerDoesNotExist(newOwner)
     {
@@ -178,7 +183,7 @@ contract MultiSigWallet {
     /// @param _required Number of required confirmations.
     function changeRequirement(uint _required)
         public
-       // onlyWallet
+        onlyWallet
         validRequirement(owners.length, _required)
     {
         required = _required;
