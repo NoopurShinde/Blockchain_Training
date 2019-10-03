@@ -1129,12 +1129,12 @@
         }
       },
       "links": {},
-      "address": "0xEB669ad158aD5DB668F0aCD2143C0C6f78628d37",
-      "transactionHash": "0xbe4bbe498ac4d17009ac864c40eb4eb2c1bec09aeb1c3a5649eace8f848961b5"
+      "address": "0x6f2aCC6DD77e730D4a5153C308F113c5e839Cf4a",
+      "transactionHash": "0x6341a7a05ba3200d8b85177a3eba6f26ef90bcec9167b83efe70d65c010c325b"
     }
   },
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-10-01T16:53:15.044Z",
+  "updatedAt": "2019-10-03T09:44:46.532Z",
   "devdoc": {
     "methods": {
       "addOwner(address)": {

@@ -1,7 +1,7 @@
 const testMultiSig = artifacts.require("./gnosisWallet.sol");
 const Web3 = require("web3");
 const { expectRevert } = require('openzeppelin-test-helpers');
-let wallet,contractTest;
+let wallet,contractTest, ERC20Test;
 
 contract.only('testMultiSig test suite', function(accounts){
    
@@ -11,6 +11,15 @@ contract.only('testMultiSig test suite', function(accounts){
      })
 
 
+     describe("ERC20 function", function(){
+
+        it("Trasnfer function", async function() {
+            const transferData = "0xa9059cbb000000000000000000000000d81a73fc640bf3387abbb2ace1ef87d367653ded000000000000000000000000000000000000000000000000000000000000000a";
+            await wallet.submitTransaction("0xC0aC50dc5982394d01CCeC30e91407A33D42eA85", 0, transferData);
+            await wallet.confirmTransaction(0, {from:accounts[1]})
+        })
+
+  })
 
     describe("Constructor and Fallback function", function(){
 
