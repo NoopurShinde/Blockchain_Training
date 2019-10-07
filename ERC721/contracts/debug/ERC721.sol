@@ -175,6 +175,7 @@ contract ERC721 is ERC165, IERC721 {
      */
     function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory _data) public {
         transferFrom(from, to, tokenId);
+            
     require(_checkOnERC721Received(from, to, tokenId, _data), "ERC721: transfer to non ERC721Receiver implementer");
     }
 
@@ -281,6 +282,22 @@ contract ERC721 is ERC165, IERC721 {
     {
         if (!to.isContract()) {
             return true;
+        }
+        
+        bytes memory payload = abi.encodeWithSignature(
+          "onERC721Received(address,address,uint256,bytes)",
+          msg.sender,
+          from,
+          tokenId,
+          _data
+        );
+
+        (bool success, bytes memory returndata) = to.call(payload);
+
+        if (!success) {
+            revert("ERC721: to address does not implement ERC721Received interface");
+        } else {
+                return true;
         }
 
         bytes4 retval = IERC721Receiver(to).onERC721Received(msg.sender, from, tokenId, _data);

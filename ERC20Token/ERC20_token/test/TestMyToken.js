@@ -54,7 +54,8 @@ contract("TestToken", function(accounts){
           const initialAllowance = await token.allowance.call(accounts[0],accounts[1]);
           state = await token.approve(accounts[1], approveAmount);
           assert.isTrue(((await token.balanceOf.call(accounts[0]) >= approveAmount) && (approveAmount>0)),"The amount to be approved should be less than account[0] balance.")
-          assert.equal((await token.allowance.call(accounts[0],accounts[1])),(Number(initialAllowance) + Number(approveAmount)),"True");
+          assert.equal((await 
+token.allowance.call(accounts[0],accounts[1])),(Number(initialAllowance) + Number(approveAmount)),"True");
           assert.equal((state.logs[0].event), 'Approval', 'Event not emitted');
       });
 

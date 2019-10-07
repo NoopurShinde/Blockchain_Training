@@ -96,12 +96,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x6F3bC9896921b9C3DfD657474515c47d86893b5F",
-      "transactionHash": "0x9556e2505e6973d3df46f917f7abd49e104d47f4aabe783cb3b3a3c7b5a30bb9"
+      "address": "0xaA7568953D70d101177679f138f22D0d2C4CBD5D",
+      "transactionHash": "0x9973e427a6b74af5003374383eaa1101bb07f1eb56e32afdca3dd773a6d5f5f4"
     }
   },
   "schemaVersion": "3.0.13",
-  "updatedAt": "2019-09-20T08:59:40.219Z",
+  "updatedAt": "2019-10-04T14:16:36.151Z",
   "devdoc": {
     "methods": {}
   },

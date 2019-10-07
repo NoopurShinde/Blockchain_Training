@@ -1,6 +1,7 @@
 const { expectRevert } = require('openzeppelin-test-helpers');
 var testERC721 = artifacts.require("./Myerc721.sol");
 var testContract = artifacts.require("./testContract.sol");
+var testContract_V1 = artifacts.require("./testContract_V1.sol");
 
 contract(testERC721, function (accounts) {
 
@@ -14,9 +15,17 @@ contract(testERC721, function (accounts) {
 
         token = await testERC721.new(_name, _symbol);
         await token.mintUniqueTokenTo(addressTo, tokenId, tokenURI);
-
-
+        testToken = new web3.eth.Contract(testERC721.abi , token.address);
     })
+  
+  
+        it("Should execute as expected", async function(){
+            let token1, token2;
+            token1 = await testContract.new()
+            token2 = await testContract_V1.new();
+            expectRevert(token.safeTransferFrom(accounts[0], token2.address, 1, {from:accounts[0]}), "ERC721: to address does not implement ERC721Received interface");
+        })        
+   
 
     describe("ERC721 Metadata", function () {
 
